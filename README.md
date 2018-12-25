@@ -4,7 +4,7 @@
 
 Just call `MD5Digest`:
 
-```
+```pascal
 uses
   dmd5;
 
@@ -25,7 +25,7 @@ var
 
 If the data is not stored as continuous memory block you can alternatively use  `MD5Init`, `MD5Update` and `MD5Final` (which are pascal implementations of functions from RFC-1321 with the same names).
 
-```
+```pascal
 var
   Context: TMD5Context;
   Digest: TMD5Digest;
@@ -44,7 +44,7 @@ end;
 
 ## Convert MD5 digest to string
 
-```
+```pascal
 function MD5DigestToString(const Digest: TMD5Digest): AnsiString;
 var
   B: Byte;
